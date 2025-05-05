@@ -79,6 +79,10 @@ git clone https://github.com/nvim-lualine/lualine.nvim ~/.config/nvim/pack/plugi
 echo "Installing WebDev Icons..."
 git clone https://github.com/nvim-tree/nvim-web-devicons ~/.config/nvim/pack/plugins/start/nvim-web-devicons
 
+echo "Installing Treesitter Context..."
+git clone https://github.com/nvim-treesitter/nvim-treesitter-context ~/.config/nvim/pack/plugins/start/nvim-treesitter-context
+
+
 echo "🧠 Installing TypeScript LSP server globally (Node.js required)..."
 npm install -g typescript typescript-language-server
 
