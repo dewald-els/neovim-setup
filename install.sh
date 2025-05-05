@@ -72,6 +72,13 @@ git clone https://github.com/nvim-treesitter/nvim-treesitter ~/.config/nvim/pack
 # Colorscheme
 git clone https://github.com/folke/tokyonight.nvim ~/.config/nvim/pack/plugins/start/tokyonight.nvim
 
+# LuaLine
+echo "Installing LuaLine..."
+git clone https://github.com/nvim-lualine/lualine.nvim ~/.config/nvim/pack/plugins/start/lualine.nvim
+
+echo "Installing WebDev Icons..."
+git clone https://github.com/nvim-tree/nvim-web-devicons ~/.config/nvim/pack/plugins/start/nvim-web-devicons
+
 echo "🧠 Installing TypeScript LSP server globally (Node.js required)..."
 npm install -g typescript typescript-language-server
 
