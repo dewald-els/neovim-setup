@@ -1,0 +1,5 @@
+require("config.colorscheme")
+require("config.options")
+require("config.treesitter")
+require("config.keymaps")
+require("config.lsp")
