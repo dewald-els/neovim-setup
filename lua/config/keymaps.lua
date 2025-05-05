@@ -25,7 +25,7 @@ map("n", "<leader>fv", ":Vexplore<CR>", opts) -- Open explorer in side
 map("n", "<leader>sf", ":Files<CR>", opts) -- Search files
 map("n", "<leader>sb", ":Buffers<CR>", opts) -- Search buffers
 map("n", "<leader>so", ":BLines<CR>", opts) -- Search current file
-map("n", "<leader>sa", ":Rg ", { noremap = true }) -- Search project with Ripgrep
+map("n", "<leader>sa", ":Rg<CR>", { noremap = true }) -- Search project with Ripgrep
 map("n", "<leader>sh", ":History<CR>", opts) -- Search history
 
 -- Code actions
