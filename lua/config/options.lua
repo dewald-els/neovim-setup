@@ -5,6 +5,8 @@ vim.cmd [[
   runtime! filetype.vim
   filetype plugin indent on
   syntax enable
+  let g:user_emmet_install_global = 0
+  autocmd FileType html,css,typescriptreact,vue EmmetInstall
 ]]
 
 -- General 

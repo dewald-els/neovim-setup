@@ -82,6 +82,12 @@ git clone https://github.com/nvim-tree/nvim-web-devicons ~/.config/nvim/pack/plu
 echo "Installing Treesitter Context..."
 git clone https://github.com/nvim-treesitter/nvim-treesitter-context ~/.config/nvim/pack/plugins/start/nvim-treesitter-context
 
+echo "Installing Nvim TS Autotag..."
+git clone https://github.com/windwp/nvim-ts-autotag ~/.config/nvim/pack/plugins/start/nvim-ts-autotag
+
+echo "Installing Emmet-nvim"
+git clone https://github.com/mattn/emmet-vim ~/.config/nvim/pack/plugins/start/emmet-vim
+
 
 echo "🧠 Installing TypeScript LSP server globally (Node.js required)..."
 npm install -g typescript typescript-language-server
