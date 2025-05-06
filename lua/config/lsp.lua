@@ -12,6 +12,12 @@ lspconfig.lua_ls.setup({
 })
 
 lspconfig.ts_ls.setup({
+	filetypes = {
+		"typescript",
+		"typescriptreact",
+		"javascript",
+		"javascriptreact",
+	},
 	on_attach = function(_, bufnr)
 		print("TypeScript LSP attached to buffer", bufnr)
 	end,
