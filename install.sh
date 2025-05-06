@@ -152,7 +152,7 @@ EOF
 echo "✅ Created ~/.ripgreprc with exclusions for .git/, node_modules/, and dist/"
 
 echo "---------------------------------------------------------------------------"
-echo "👉 Open Neovim and run: :TSInstall typescript tsx lua javascript json"
+echo "👉Thanks for using Easy Nvim! 
 echo "---------------------------------------------------------------------------"
 
 echo ""
