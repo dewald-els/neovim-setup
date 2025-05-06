@@ -36,6 +36,21 @@ lsp_signature.setup({
 	floating_window_above_cur_line = true,
 })
 
+lspconfig.tailwindcss.setup({
+	on_attach = function(client, bufnr)
+		-- Optional: attach signature plugin
+	end,
+	filetypes = {
+		"html",
+		"css",
+		"scss",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"tsx",
+	}
+})
+
 local cmp = require("cmp")
 
 cmp.setup({

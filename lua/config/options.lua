@@ -9,6 +9,11 @@ vim.cmd [[
   autocmd FileType html,css,typescriptreact,vue EmmetInstall
 ]]
 
+vim.filetype.add({
+	tsx = "typescriptreact",
+	jsx = "javascriptreact",
+})
+
 -- General 
 opt.number = true
 opt.relativenumber = true

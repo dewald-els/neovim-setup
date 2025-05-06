@@ -89,8 +89,8 @@ echo "Installing Emmet-nvim"
 git clone https://github.com/mattn/emmet-vim ~/.config/nvim/pack/plugins/start/emmet-vim
 
 
-echo "🧠 Installing TypeScript LSP server globally (Node.js required)..."
-npm install -g typescript typescript-language-server
+echo "🧠 Installing LSP's from Node(npm) (Node.js required)..."
+npm install -g typescript typescript-language-server @tailwindcss/language-server
 
 
 echo "✅ Setup complete!"
