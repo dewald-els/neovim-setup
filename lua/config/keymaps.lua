@@ -7,26 +7,46 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Split window
-map("n", "<leader>sv", "<C-w>v", opts)     -- Split window veritcally
-map("n", "<leader>sh", "<C-w>s", opts)     -- Split window horizontally
-map("n", "<leader>se", "<C-w>=", opts)     -- Make split equal
-map("n", "<leader>sx", ":close<CR>", opts) -- Close current split
+map("n", "<leader>w", "", { desc = "+Window" }) -- Group Heading
+map("n", "<leader>wv", "<C-w>v", {
+	noremap = true,
+	silent = true,
+	desc = "Window - Split Vertical"
+})     -- Split window veritcally
+map("n", "<leader>wh", "<C-w>s", {
+	noremap = true,
+	silent = true,
+	desc = "Window - Split Horizontal"
+})     -- Split window horizontally
+map("n", "<leader>we", "<C-w>=", {
+	noremap = true,
+	silent = true,
+	desc = "Window - Make Split Equal",
+})     -- Make split equal
+map("n", "<leader>wx", ":close<CR>", {
+noremap = true,
+silent = true,
+desc = "Window - Close Split"
+}) -- Close current split
 
 -- Buffer navigation
-map("n", "<leader>bn", ":bnext<CR>", opts)     -- Next Buffer
-map("n", "<leader>bp", ":bprevious<CR>", opts) -- Prev Buffer
-map("n", "<leader>bx", ":bdelete<CR>", opts)   -- Delete current buffer
+map("n", "<leader>b", "", { desc = "+Buffer" }) -- Group heading
+map("n", "<leader>bn", ":bnext<CR>", { noremap = true, silent = true, desc = "Next buffer" })     -- Next Buffer
+map("n", "<leader>bp", ":bprevious<CR>",  { noremap = true, silent = true, desc = "Prev buffer" }) -- Prev Buffer
+map("n", "<leader>bx", ":bdelete<CR>",  { noremap = true, silent = true, desc = "Delete buffer" })   -- Delete current buffer
 
 -- File navigation
-map("n", "<leader>fe", ":Explore<CR>", opts)  -- Open the File explrorer
-map("n", "<leader>fv", ":Vexplore<CR>", opts) -- Open explorer in side
+map("n", "<leader>f", "", { desc = "+File Navigation" }) --Group heading
+map("n", "<leader>fe", ":Explore<CR>",  { noremap = true, silent = true, desc = "Explorer" })  -- Open the File explrorer
+map("n", "<leader>fv", ":Vexplore<CR>",  { noremap = true, silent = true, desc = "Explorer (Vertical)" }) -- Open explorer in side
 
 -- FZF File search
-map("n", "<leader>sf", ":Files<CR>", opts)            -- Search files
-map("n", "<leader>sb", ":Buffers<CR>", opts)          -- Search buffers
-map("n", "<leader>so", ":BLines<CR>", opts)           -- Search current file
-map("n", "<leader>sa", ":Rg<CR>", { noremap = true }) -- Search project with Ripgrep
-map("n", "<leader>sh", ":History<CR>", opts)          -- Search history
+map("n", "<leader>s", "", { desc = "+Search" }) --Group heading
+map("n", "<leader>sf", ":Files<CR>",  { noremap = true, silent = true, desc = "Search file name" })            -- Search files
+map("n", "<leader>sb", ":Buffers<CR>", { noremap = true, silent = true, desc = "Search open buffers" } )          -- Search buffers
+map("n", "<leader>so", ":BLines<CR>",  { noremap = true, silent = true, desc = "Search in open file" })           -- Search current file
+map("n", "<leader>sa", ":Rg<CR>", { noremap = true, silent = true, desc = "Search text in all files" }) -- Search project with Ripgrep
+map("n", "<leader>sh", ":History<CR>",  { noremap = true, silent = true, desc = "Show file history" })          -- Search history
 
 -- Code actions
 map("n", "K", vim.lsp.buf.hover, { noremap = true })

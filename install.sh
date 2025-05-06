@@ -94,6 +94,17 @@ echo "Cloning Treesitter..."
 echo "---------------------------------------------------------------------------"
 git clone https://github.com/nvim-treesitter/nvim-treesitter ~/.config/nvim/pack/plugins/start/nvim-treesitter
 
+echo "---------------------------------------------------------------------------"
+echo " Cloning Which-Key..."
+echo "---------------------------------------------------------------------------"
+git clone https://github.com/folke/which-key.nvim ~/.config/nvim/pack/plugins/start/which-key.nvim
+
+
+echo "---------------------------------------------------------------------------"
+echo " Cloning Plenary..."
+echo "---------------------------------------------------------------------------"
+git clone https://github.com/nvim-lua/plenary.nvim ~/.config/nvim/pack/plugins/start/plenary.nvim
+
 # Colorscheme
 echo "---------------------------------------------------------------------------"
 echo "Installing Tokyonight Colorscheme..."
