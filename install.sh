@@ -163,7 +163,7 @@ EOF
 echo "✅ Created ~/.ripgreprc with exclusions for .git/, node_modules/, and dist/"
 
 echo "---------------------------------------------------------------------------"
-echo "👉Thanks for using Easy Nvim! 
+echo "👉Thanks for using Easy Nvim! "
 echo "---------------------------------------------------------------------------"
 
 echo ""
